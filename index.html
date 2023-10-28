@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <style>
+        body {
+            background-image: url('./img/backgraund/header-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <link rel="stylesheet" href="./style-header.css" type="text/css">
+    <link rel="stylesheet" href="./style-main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Дмитрий Романов</h1>
+        </div>
+        <div class="container">
+            <button class="button flag ru">RU</button>
+            <button class="button flag de">DE</button>
+            <button class="button flag en">EN</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="typing-text">
+           <h2>Привет</h2>
+           <p class="resume">Меня зовут Дмитрий, и я являюсь веб-разработчиком,
+                специализирующимся на создании веб-приложений и сайтов. 
+                Моя работа включает в себя верстку как простых веб-визиток,
+                так и других веб-сайтов, основанных на вашем уникальном дизайне,
+                созданном в Figma. Я стремлюсь к тому, чтобы каждый проект был
+                уникальным и отвечал вашим потребностям. Совместно с клиентами
+                мы разрабатываем концепцию и создаем дизайн веб-визиток, которые
+                подчеркивают вашу уникальность и ценности. Моя специализация 
+                включает в себя работу с языками HTML, CSS и JavaScript, чтобы
+                создавать современные и интерактивные веб-решения. 
+                С удовольствием помогу вам воплотить в жизнь вашу веб-идею.
+                Свяжитесь со мной, и мы обсудим, как я могу вам помочь
+                достичь ваших целей.</p>
+            
+        </div>
+        <script src="script.js"></script>
+    </main>
+
+    <footer class="footer">
+        <!-- Этой функцией скрывается номер телефона на самой странице Whatsaap, в классе footer-icons-row находится ссылка 
+        на этот код и на иконку Whatsaap-->
+        <script type="text/javascript">
+            function openWhatsApp() {
+              var phoneNumber = "4915236338080";
+              var encryptedPhoneNumber = encodeURIComponent(window.btoa(phoneNumber));
+              var url = "https://api.whatsapp.com/send?phone=" + encryptedPhoneNumber + "&text= Нужен сайт? Пишите, поможем!";
+              window.open(url, "_blank");
+            }
+          </script>
+          
+        <div class="container">
+            <div class="footer-row">
+
+                <div class="footer-copyright footer-col">
+                    <div class="footer-copyright-name">© Дмитрий Романов</div>
+                       <!-- <p>HTML верстка и разработка сайтов</p> -->
+                </div>
+
+                <div class="footer-icons footer-col">
+                    <p>Мои профили в социальных сетях:</p>
+                    <div class="footer-icons-row">
+                        <a href="https://t.me/typesetter_bot"> 
+                            <img src="./img/icons/icons8-telegram-app.svg" alt="Телеграм">
+                        </a>
+                        <a href="#"> 
+                            <img src="./img/icons/icons8-facebook.svg" alt="Фейсбук">
+                        </a>
+                        <a href="#"> 
+                            <img src="./img/icons/icons8-vk.svg" alt="В контакте">
+                        </a>
+                        <a href="javascript:void(0);" onclick="openWhatsApp();">
+                            <img src="./img/icons/icons8-whatsapp.svg" alt="whatsapp">
+                        </a>
+                        <a href="#"> 
+                            <img src="./img/icons/icons8-github.svg" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-contacts footer-col">
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
