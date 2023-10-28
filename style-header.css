@@ -1,0 +1,54 @@
+.header {
+    display: flex; /* Размещение элементов внутри .header горизонтально */
+    justify-content: space-between; /* Равномерное распределение между контейнерами */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    background-image: url('путь_к_фоновому_изображению.jpg');
+    background-size: cover; /* Масштабировать изображение для заполнения всей области */
+    background-repeat: no-repeat; /* Не повторять изображение */
+    padding: 10px; /* Добавление небольшого отступа от границ .header */
+}
+
+h1 {
+    color: white;
+    text-align: left; /* Выравнивание текста влево */
+    margin-left: 60px; /* Отступ справа */
+    font-size: 46px; /* Устанавливает размер шрифта в 46 пикселей */
+}
+
+
+.container {
+    text-align: left;
+}
+
+.buttons {
+    display: flex; /* Размещение кнопок горизонтально */
+    align-items: center;
+}
+
+.button {
+    background-color: rgba(103, 145, 174, 0.999); /* Прозрачный фон для кнопок */
+    border: none; /* Убрать границы кнопок */
+    padding: 5px 10px; /* Подобрать подходящие отступы для кнопок */
+    color: white; /* Цвет текста кнопок */
+    margin-right: 10px; /* Отступ справа для кнопок */
+    border: 1px solid #2980b9; /*создает граничную линию вокруг кнопки.*/
+    box-shadow: 0 5px 5px #01101b, 0 8px 10px rgba(0, 0, 0, 0.2); /* добавляет два боковых бокс-сдвига: один для вертикального 
+                                                                     выноса и другой для создания тени кнопки. Это придает кнопке трехмерный вид.*/
+    transition: transform 0,2s; /*создает плавный эффект при наведении, который поднимает кнопку немного вверх.*/
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.flag.ru {
+    background-image: url('флаг_ru.jpg'); /* Фоновое изображение для кнопки RU */
+}
+
+.flag.de {
+    background-image: url('флаг_de.jpg'); /* Фоновое изображение для кнопки DE */
+}
+
+.flag.en {
+    background-image: url('флаг_en.jpg'); /* Фоновое изображение для кнопки EN */
+}
